@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HomeWork12_2</title>
+</head>
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}	
+	.conteiner{
+		position: relative;
+		width: 100%;
+		height: 2000px;
+		margin: 0 auto;
+	}	
+	.box_static{
+		position: static;
+		background-color: cornflowerblue;
+		border: rgba(184,0,255,1.00) solid 5px;
+		color: aquamarine;
+		width: 150px;
+		height: 100px;
+		text-align: center;
+	}
+	.box_relative{
+		position: relative;
+		background-color: rgba(225,143,240,1.00);
+		border: rgba(184,0,255,1.00) solid 5px;
+		color: mediumpurple;
+		width: 300px;
+		height: 100px;
+		text-align: center;
+		top: 10px;
+		left: 50px;
+	}
+	.box_absolute{
+		position: absolute;
+		background-color: skyblue;
+		border: rgba(255,229,141,1.00) solid 5px;
+		color: mediumpurple;
+		width: 150px;
+		height: 100px;
+		text-align: center;
+		top: 160px;
+		left: 240px;
+	}
+	.box_fixed{
+		position: fixed;
+		background-color: yellowgreen;
+		border: rgba(63,181,88,1.00) solid 5px;
+		color: mediumpurple;
+		width: 250px;
+		height: 200px;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+	}
+	.child-box{	
+		width: 250px;
+		height: 200px;
+	}
+	.child-box-relative{
+		z-index: 999;
+		position: relative;
+		top: 80px;
+		left: 40px;
+		background-color: lightpink;
+		border: rgba(75,96,195,1.00) solid 5px;
+	}
+	.child-box-relative2{
+		z-index: 9999;
+		position: relative;
+		top: 10px;
+		left: 15px;
+		background-color: lightsalmon;
+		border: rgba(35,201,152,1.00) solid 5px;
+		width: 450px;
+		height: 300px;
+	}
+	</style>
+<body>
+	<div class="conteiner">
+		<div class="box_static box">1</div>
+		<div class="box_relative box">2</div>
+		   <div class="child-box-relative child-box">Z-index</div>
+		   <div class="child-box-relative2 child-box">Z-index</div>
+		<div class="box_absolute box">3</div>
+		<div class="box_fixed box">4</div>
+	</div>	
+</body>
+</html>

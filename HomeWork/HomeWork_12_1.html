@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HomeWork12_1</title>
+</head>
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	.wraper_modal{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.modal{
+		z-index: 9999;
+		background: rgba(239,149,224,0.90) ;
+		position: absolute;
+		left: 50%;
+		margin-left: -131px;
+		top: 50%;
+		margin-top: -164px;
+		width: 300px;
+		height: 350px;
+		border-radius: 10px;
+	}
+	.modal h2{
+		font-size: 20px;
+		text-align: center;
+		color: rgba(147,0,195,1.00);
+		padding: 11px 0px 11px 0px;
+		text-transform: uppercase;
+	}
+	.closed{
+		z-index: 99999;
+		position: absolute;
+		right: 15px;
+		top: 8px;
+		cursor: pointer;
+		color: rgba(207,15,233,1.00);
+		font-weight: bold;
+	}
+	.input{
+		font-size: 15px;
+		background: rgba(238,213,240,1.00);
+		
+		border: none;
+		width: 100%;
+		padding: 11px 0px 11px 0px;
+		
+		margin-bottom: 15px;
+		text-align: center;
+		border-radius: 5px;
+	}
+	#button{
+		font-size: 15px;
+		padding: 11px 0px 11px 0px;
+		margin-top: 5px;
+		
+		color:rgba(0,0,0,1.00);
+		background: rgba(238,213,240,1.00);
+		
+		border: none;
+		width: 100%;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	#form1{
+		display: block;
+		width: 100%;
+	}
+	</style>
+<body>
+	<div class="wraper_modal">
+		<div class="modal">
+			<h2>Ваш Запрос</h2>
+			<span class="closed">X</span>
+			<form id="form1" name="form1">
+				<input type="text" name="name" id="name" class="input" placeholder="ИМЯ"/>
+				<input type="email" name="email" id="email" class="input" placeholder="E-MAIL"/>
+				<input type="textarea" name="textarea" id="textarea" class="input" placeholder="КОММЕНТАРИЙ"/>
+				<button id="button">ЗАКАЗАТЬ</button>
+			</form>
+		</div>		
+	</div>
+</body>
+</html>

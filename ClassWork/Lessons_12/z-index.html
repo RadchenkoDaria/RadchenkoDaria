@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>z-index</title>
+</head>
+<style>
+	.wrapper-box{
+		position: relative;
+	}
+	.conteiner{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.box{
+		widows: 200px;
+		height: 200px;
+		font-size: 40px;;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 20px;
+		margin: 20px;
+		position: absolute
+	}
+	.box1{
+		background: #45C41F;
+	}
+	.box2{
+		background: #B47230;
+		top: 47px;
+		left: 15px;
+	}
+	.box3{
+		background: #3C5BBD;
+		top: 109px;
+		left: 26px;
+	}
+</style>
+<body>
+	<div class="wrapper-box">
+		<div class="conteiner">
+			<div class="box box1">1</div>
+			<div class="box box2">2</div>
+			<div class="box box3">3</div>	
+		</div>	
+	</div>
+</body>
+</html>
