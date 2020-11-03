@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>main</title>
+	 <link href="vendor/css/all.min.css" type="text/css" rel="stylesheet"> <!--load all styles -->
+</head>
+<style>
+	*{
+		padding: 0px;
+		margin: 0;
+	}
+	.conteiner{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.fl{
+		float: left;
+	}
+	.fr{
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	img{
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	.clock_work{
+		width: 13%;
+	}
+	.clock_work i{
+		font-size: 19px;
+		color:rgba(171,116,213,1.00);		
+		padding-left: 5px;
+	}
+	.clock_work span{
+		
+	}
+	.phone_main{
+		width: 12%;
+	}
+	.phone_main i{
+		font-size: 19px;
+		color: hotpink;
+		
+	}
+	.adress_main{
+		width: 23%
+	}
+	.logo{
+		width: 20%;
+	}
+	.header{
+		margin: 15px 0;
+	}
+	.nav-menu{
+		width: 100%;
+		background: rgba(199,117,221,1.00); 
+	}
+	ul.menu-main li.item-menu{
+		list-style: none;
+		float: left;
+	}
+	ul.menu-main li.item-menu a{
+		text-decoration: none;
+		color: purple;
+		font-size: 25px;
+		padding: 20px 15px;
+		display: block;
+	}
+	ul.menu-main li.item-menu a:hover{
+		color: olivedrab;	
+	}
+	ul.menu-main li.item-menu:nth-child(4){
+		position: relative;
+	}
+	ul.menu-main li.item-menu:nth-child(4) ul.child-menu-item{
+		position: absolute;
+		background: rgba(199,117,221,1.00);
+		width: 150px;
+		display: none;
+	}
+	ul.menu-main li.item-menu:nth-child(4):hover ul.child-menu-item{
+		display: block;
+	} 
+	ul.menu-main li.item-menu ul.child-menu-item li{
+		float: inherit;
+	}
+	ul.menu-main li.item-menu ul.child-menu-item li a{
+		padding: 9px 15px;
+	}
+	</style>
+<body>
+	<main class="main">
+		<div class="for_page">
+			<div class="page">
+			<header class="header">
+				<div class="conteiner">
+					<div class="logo fl">
+						<a href="/"><img src="img/logo.jpg" alt="logo" title="Логотип"></a>		
+					</div>
+					<div class="clock_work fr">
+						<i class="fas fa-clock"></i><span> с 9:00 до 18:00</span>
+					</div>
+					<div class="phone_main fr">
+						<i class="fas fa-phone-volume"></i> <a href="tel:+380669013198">+380669013198</a>
+					</div>
+					<div class="adress_main fr">
+						<i class="fas fa-map-marked"></i> г.Киев ул. Попудренка 23 оф.34
+					</div>
+					<div class="clear"></div>
+				</div>
+				<nav class="nav-menu">
+					<div class="conteiner">
+						<ul class="menu-main">
+							<li class="item-menu"><a href="/">Главная</a></li>
+							<li class="item-menu"><a href="/">О Компании</a></li>
+							<li class="item-menu"><a href="/">Отзывы</a></li>
+							<li class="item-menu"><a href="/">Каталог</a>
+								<ul class="child-menu-item">
+									<li class="item-menu"><a href="item-link">Кроссовки</a></li>
+									<li class="item-menu"><a href="item-link">Шарики</a></li>
+									<li class="item-menu"><a href="item-link">Шторы</a></li>
+									<li class="item-menu"><a href="item-link">Сумки</a></li>
+									<li class="item-menu"><a href="item-link">Туфли</a></li>
+								</ul>
+							</li>
+							<li class="item-menu"><a href="/">Новости</a></li>
+							<li class="item-menu"><a href="/">Рубрика</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</nav>
+			</header>	
+			</div>								 
+		</div>
+	</main>
+</body>
+</html>
