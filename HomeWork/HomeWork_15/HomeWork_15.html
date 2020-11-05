@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>main</title>
+	 <link href="vendor/css/all.min.css" type="text/css" rel="stylesheet"> <!--load all styles -->	
+	<link href="css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/customs.js">		
+	</script>
+</head>
+<style>
+	*{
+		padding: 0px;
+		margin: 0;
+	}
+	html,
+	body{
+		height: 100%;
+	}
+	.for_page{
+		position: relative;
+		min-height: 100%;
+	}
+	.page{
+		padding-bottom: 20px;
+	}
+	.conteiner{
+		width: 1170px;
+		margin: 0 auto;		
+	}
+	.fl{
+		float: left;
+	}
+	.fr{
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	img{
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	.clock_work{
+		width: 20%;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		font-size: 15px;
+		padding-left: 5px;
+		color: lightgrey;
+	}
+	.clock_work i{
+		font-size: 19px;
+		color:rgba(171,116,213,1.00);		
+		padding-left: 5px;
+	}
+	.phone_main{
+		width: 20%;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		font-size: 15px;
+		padding-left: 5px;		
+	}
+	.phone_main a{
+		text-decoration: none;
+		color: lightgrey;    
+	}
+	.phone_main i{
+		font-size: 19px;
+		color:rgba(171,116,213,1.00);
+	}
+	.adress_main{
+		width: 25%;	
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		font-size: 15px;
+		color: lightgrey;
+	}
+	.adress_main i{
+		font-size: 19px;
+		color:rgba(171,116,213,1.00);
+		
+	}
+	.logo{
+		width: 20%;
+	}
+	.header{
+		padding: 15px 5px 0;
+		margin-bottom: 0px;
+		background: #262626;
+	}
+	.footer{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		background: #262626;
+		padding: 20px 0;
+	}
+	/*МЕНЮ*/
+	.nav-menu{
+		width: 100%;
+		background: #262626; 		
+	}
+	ul.menu-main li.item-menu{
+		list-style: none;
+		float: left;
+	}
+	ul.menu-main li.item-menu a{
+		text-decoration: none;
+		color: lightgrey;
+		font-size: 16px;
+		padding: 20px 15px;
+		display: block;
+		border-left: solid 1px #5a5a5a;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		font-weight: bold;		
+	}
+	ul.menu-main li.item-menu a:hover{
+		color: olivedrab;	
+	}
+	ul.menu-main li.item-menu:nth-child(4){
+		position: relative;
+	}
+	ul.menu-main li.item-menu:nth-child(4) ul.child-menu-item{
+		position: absolute;
+		background: #262626;
+		width: 150px;
+		display: none;
+		z-index: 99;		
+	}
+	ul.menu-main li.item-menu:nth-child(4):hover ul.child-menu-item{
+		display: block;
+	} 
+	ul.menu-main li.item-menu ul.child-menu-item li{
+		float: inherit;
+		border-top: solid 1px #5a5a5a;
+	}
+	ul.menu-main li.item-menu ul.child-menu-item li a{
+		padding: 9px 15px;		
+	}
+	/*END MENU*/
+	
+	.content{
+		margin-bottom: 60px;
+	}
+	.item-blog{
+		width: 340px;		
+		float: left;
+		box-sizing: border-box;
+		margin-right: 15px;
+		margin-bottom: 30px;
+		padding-top: 10px;
+	}
+	.item-blog h2{
+		min-height: 80px;
+		margin-top: 15px;
+	}
+	.item-blog a{
+		
+		font-size: 16x;
+		line-height: 19px;
+		display: block;
+		text-decoration: none;
+		color: #000000;
+	}
+	.item-blog a:hover{
+		color: darkolivegreen;
+	}
+	.item-blog:nth-child(4){
+		clear: both;
+	}
+	.item-blog:nth-child(7){
+		clear: both;
+	}
+	.item-blog .btn_blog{
+		width: 151px;
+		margin-left: 26%;
+		margin-top: 10px;
+		box-sizing: border-box;
+		background: #CB8BEC;
+		padding: 10px;
+		text-align: center;
+	}
+	.item-blog .btn_blog:hover{
+		background: #7271DD;
+		
+	}
+	img{
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		display: block;
+	}	
+	.image-blog{
+		max-height: 180px;
+		overflow: hidden;
+	}
+	.expert_discription{
+		min-height: 110px;
+		overflow: hidden;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.prase-folse{
+		font-size: 20px;
+		color: red;
+		text-decoration: line-through;
+	}
+	.true{
+		font-size: 30px;
+		color: black;
+				
+	}
+	</style>
+<body>
+	<main class="main">
+		<div class="for_page">
+			<div class="page">
+			<header class="header">
+				<div class="conteiner">
+					<div class="logo fl">
+						<a href="/"><img src="img/site-title1.png" alt="logo" title="Логотип"></a>		
+					</div>
+					<div class="clock_work fl">
+						<i class="fas fa-clock"></i><span> с 9:00 до 18:00</span>
+					</div>
+					<div class="phone_main fl">
+						<i class="fas fa-phone-volume"></i> <a href="tel:+380669013198">+380669013198</a>
+					</div>
+					<div class="adress_main fl">
+						<i class="fas fa-map-marked"></i> г.Киев ул. Попудренка 23 оф.34
+					</div>
+					<div class="clear"></div>
+				</div>
+				<nav class="nav-menu">
+					<div class="conteiner">
+						<ul class="menu-main">
+							<li class="item-menu"><a href="/">Главная</a></li>
+							<li class="item-menu"><a href="/">PC Win/Mac</a></li>
+							<li class="item-menu"><a href="/">Отзывы</a></li>
+							<li class="item-menu"><a href="/">Каталог</a>
+								<ul class="child-menu-item">
+									<li class="item-menu"><a href="item-link">Инструкция</a></li>
+									<li class="item-menu"><a href="item-link">Начать пользоваться</a></li>
+									<li class="item-menu"><a href="item-link">Видео</a></li>
+									<li class="item-menu"><a href="item-link">Paint Pro</a></li>
+									<li class="item-menu"><a href="item-link">Подробно</a></li>
+								</ul>
+							</li>
+							<li class="item-menu"><a href="/">Новости</a></li>
+							<li class="item-menu"><a href="/">Рубрика</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</nav>
+			</header>
+		<main class="for_page">
+		<div class="page">
+			<section class="content">
+				<div class="conteiner">
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/main-300x189.jpg" alt=""/></div>
+						<h2><a href="#">Let’s use “Horizontal Flip” and draw a symmetrical illustration!</a></h2>
+						<div class="expert_discription">When drawing a symmetrical illustration like with twin characters, or a reflection in a mirror, you can easily produce characters that face each other using “horizontal flip.” I will introduce this method to you this time! First, we’ll draw...
+						</div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+					  <a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/5.jpg" alt=""/></div>
+						<h2><a href="#">How to use the clipping mask function to change the line art color</a></h2>
+						<div class="expert_discription">In this tutorial, I’ll be introducing a way to use the clipping mask function to adjust and blend the line art color. First, create and color the line art layer. It’s not bad like this, but the black line art makes it feel a little harsh. Let’s use a clipping mask to soften it up.
+				      </div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/4c85c234076325c638e2c305400f29d6-1.png" alt=""/></div>
+						<h2><a href="#">A simple guide for making eyes ～6 steps to draw translucent eyes～</a></h2>
+						<div class="expert_discription">Next, duplicate the blending for the newly created layer. With a light purple color, paint in shadows below the eyelids and the pupils. For the interior of the eyes, if you add in shadows with the same color as the eyes painted in layer 1, the shadows will clearly stand out.
+					  </div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/main-300x189.jpg" alt=""/></div>
+						<h2><a href="#">Let’s use “Horizontal Flip” and draw a symmetrical illustration!</a></h2>
+						<div class="expert_discription">When drawing a symmetrical illustration like with twin characters, or a reflection in a mirror, you can easily produce characters that face each other using “horizontal flip.” I will introduce this method to you this time! First, we’ll draw...</div>
+						
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/5.jpg" alt=""/></div>
+						<h2><a href="#">How to use the clipping mask function to change the line art color</a></h2>
+						<div class="expert_discription">In this tutorial, I’ll be introducing a way to use the clipping mask function to adjust and blend the line art color. First, create and color the line art layer. It’s not bad like this, but the black line art makes it feel a little harsh. Let’s use a clipping mask to soften it up.
+				      </div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/4c85c234076325c638e2c305400f29d6-1.png" alt=""/></div>
+						<h2><a href="#">A simple guide for making eyes ～6 steps to draw translucent eyes～</a></h2>
+						<div class="expert_discription">Next, duplicate the blending for the newly created layer. With a light purple color, paint in shadows below the eyelids and the pupils. For the interior of the eyes, if you add in shadows with the same color as the eyes painted in layer 1, the shadows will clearly stand out.
+					  </div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/main-300x189.jpg" alt=""/></div>
+						<h2><a href="#">Let’s use “Horizontal Flip” and draw a symmetrical illustration!</a></h2>
+						<div class="expert_discription">When drawing a symmetrical illustration like with twin characters, or a reflection in a mirror, you can easily produce characters that face each other using “horizontal flip.” I will introduce this method to you this time! First, we’ll draw...
+						</div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/5.jpg" alt=""/></div>
+						<h2><a href="#">How to use the clipping mask function to change the line art color</a></h2>
+						<div class="expert_discription">In this tutorial, I’ll be introducing a way to use the clipping mask function to adjust and blend the line art color. First, create and color the line art layer. It’s not bad like this, but the black line art makes it feel a little harsh. Let’s use a clipping mask to soften it up.
+				      </div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="item-blog">
+						<div class="image-blog"><img src="img/4c85c234076325c638e2c305400f29d6-1.png" alt=""/></div>
+						<h2><a href="#">A simple guide for making eyes ～6 steps to draw translucent eyes～</a></h2>
+						<div class="expert_discription">Next, duplicate the blending for the newly created layer. With a light purple color, paint in shadows below the eyelids and the pupils. For the interior of the eyes, if you add in shadows with the same color as the eyes painted in layer 1, the shadows will clearly stand out.
+					    </div>
+						<div class="true">82 359 ₴
+						     <div class="prase-folse">82 359 ₴</div>
+						</div>
+						<a class="btn_blog" href="#">Подробнее</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+		</div>	
+	</main>
+			</div>
+			<footer class="footer"></footer>
+		</div>
+	</main>
+</body>
+</html>
