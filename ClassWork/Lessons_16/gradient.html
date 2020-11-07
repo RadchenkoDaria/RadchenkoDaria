@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .conteiner{
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .grad1_leneynuy{
+        height: 200px;
+        background-image: linear-gradient(to right, #cc9999, #669999, #66cccc, #cc6666);
+        margin-bottom: 20px;
+    }
+    .grad2_leneynuy{
+        height: 200px;
+        margin-bottom: 20px;
+        background: linear-gradient(to top, #ce9388 20%, #FFF9ED 20%, #FFF9ED 80%, #cdace7 80%);
+    }
+    .grad3_radiul{
+        height: 200px;
+        width: 200px;
+        background: radial-gradient(rgb(179, 128, 52) 7%, rgb(101, 137, 214) 10%, rgb(218, 132, 196) 40%)  ;
+        margin-bottom: 20px;
+    }
+    .grad4_radiul{
+        height: 200px;
+        width: 200px;
+        background: radial-gradient(rgb(128, 235, 217), rgb(101, 137, 214) 50%);
+        margin-bottom: 20px;
+    }
+    .grad5_radiul{
+        height: 200px;
+        width: 200px;
+        background: radial-gradient(farthest-corner at 20px 20px, rgb(128, 235, 217), rgb(101, 137, 214) 50%);
+        margin-bottom: 20px;
+    }
+    .shadow_efect1 h2{
+        height: 40px;
+        margin-bottom: 20px;
+        text-shadow: rgb(146, 146, 168) 14px 18px;
+    }
+    .shadow_efect2 h2{
+        height: 40px;
+        margin-bottom: 20px;
+        text-shadow: rgb(146, 146, 168) 14px 18px 3px;
+    }
+    .shadow_efect3 h2{
+        height: 40px;
+        margin-bottom: 20px;
+        text-shadow: rgb(171, 171, 235) -14px -18px 3px,  rgb(233, 225, 183) 14px 18px 3px;
+    }
+    .shadow_efect4 h2{
+        height: 40px;
+        margin-bottom: 20px;
+        text-shadow: -1px -1px rgb(236, 188, 124), 0 1px 0 rgb(224, 127, 48);
+    }
+    .shadow_efect5 h2{
+        height: 40px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+    }
+    .shadow_efect6 h2{
+        height: 40px;
+        margin-bottom: 20px;
+        color:rgb(218, 132, 196);
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        background: burlywood;
+        box-shadow: darkmagenta 10px 10px;
+        margin-bottom: 30px;
+    }
+    .box2{
+        width: 200px;
+        height: 200px;
+        background: burlywood;
+        box-shadow: darkmagenta 10px 10px 5px;
+        margin-bottom: 30px;
+    }
+    .box3{
+        width: 200px;
+        height: 200px;
+        background: burlywood;
+        border: 1px solid;
+        box-shadow: inset 10px 10px 9px 10px  lightcoral, inset -10px -10px 14px 10px  mediumvioletred;			
+        margin-bottom: 30px;
+    }
+</style>
+<body>
+    <div class="conteiner">
+        <div class="grad1_leneynuy">
+        </div>
+        <div class="grad2_leneynuy">
+        </div>
+        <div class="grad3_radiul">
+        </div>
+        <div class="grad4_radiul">
+        </div>
+        <div class="grad5_radiul">
+        </div>
+        
+        <div class="shadow_efect1">
+            <h2>Текст с тенью</h2>            
+        </div>
+        <div class="shadow_efect2">
+            <h2>Текст с тенью+размытие</h2>
+        </div>
+        <div class="shadow_efect3">
+            <h2>Текст с двумя темяни</h2>
+        </div>
+        <div class="shadow_efect4">
+            <h2>Вдавленный текст</h2>
+        </div>
+        <div class="shadow_efect5">
+            <h2>Объемный текст</h2>
+        </div>
+        <div class="shadow_efect6">
+            <h2>Текст с контуром</h2>
+        </div>
+        <div class="box1">
+            <h2>Блок с тенью</h2>
+        </div>
+        <div class="box2">
+            <h2>Блок с тенью+размытие</h2>
+        </div>
+        <div class="box3">
+            <h2>Две внутренние тени</h2>
+        </div>
+    </div>
+</body>
+</html>
