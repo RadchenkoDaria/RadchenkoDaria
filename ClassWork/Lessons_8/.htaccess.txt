@@ -1,3 +1,0 @@
-<IfModule mod_rewrite.c>
-Redirect 301 /servise /uslugi
-</IModule>

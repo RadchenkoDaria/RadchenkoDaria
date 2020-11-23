@@ -1,0 +1,223 @@
+/*Стандартные параметры для страницы*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+  position: relative;
+}
+.for_page {
+  position: relative;
+  min-height: 100%;
+}
+.page {
+  padding-bottom: 50px;
+}
+.header {
+  background: #262626;
+}
+.wrapper_header {
+  height: 50px;
+}
+.logo {
+  width: 20%;
+  height: 50px;
+}
+.logo img {
+  padding-top: 13px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.menu {
+  background: #262626;
+}
+ul.nav-menu {
+  display: flex;
+}
+ul.nav-menu li.item-menu {
+  list-style: none;
+}
+ul.nav-menu li.item-menu a {
+  padding: 15px 30px;
+  color: aliceblue;
+  font-size: 19px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Bahnschrift", sans-serif; /*подключаю стиль с инета*/
+}
+ul.nav-menu li.item-menu a {
+  padding-left: 0px;
+}
+ul.nav-menu li.item-menu a:hover {
+  color: #cb8bec;
+}
+ul.nav-menu li.item-menu {
+  position: relative;
+}
+.menu ul ul {
+  display: block;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  background: #262626;
+}
+ul.nav-menu li.item-menu ul.child-item-menu li a {
+  padding: 13px 13px;
+}
+ul.nav-menu li.item-menu:hover ul.child-item-menu {
+  display: block;
+  height: 150px; /**/
+}
+ul.nav-menu li.item-menu:nth-child(2):hover ul.child-item-menu {
+  display: block;
+  height: 100px; /**/
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #262626;
+  padding: 20px 0;
+}
+.conteiner {
+  width: 1170px;
+  margin: 0 auto;
+}
+/*Стандартные параметры для страницы*/
+
+/*Подключаю стили с инета*/
+@import url("http://fonts.cdnfonts.com/css/bahnschrift");
+/*Подключаю стили с инета*/
+
+.wrapper_content {
+  display: flex;
+}
+.sidebar {
+  width: 300px;
+}
+.sidebar_content {
+  padding: 20px 20px;
+  background: rgb(221, 221, 221);
+  width: 250px;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+.sidebar_content h3 {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.sidebar_content a {
+  font-size: 20px;
+  font-family: "Bahnschrift", sans-serif;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: black;
+}
+.sidebar_content a:hover {
+  color: #cb8bec;
+  transition: 0.5s;
+}
+.sidebar_content .wpp_list li {
+  list-style: none;
+  padding: 10px 15px;
+  border-top: 1px solid #5a5a5a;
+}
+.sidebar_content .wpp_list a {
+  display: block;
+  font-size: 15px;
+}
+.content {
+  width: 800px;
+}
+.article_content {
+  padding: 20px 20px;
+  background: rgb(221, 221, 221);
+  border-radius: 15px;
+  width: 700px;
+  margin: 25px;
+  display: inline-flex;
+  align-items: center;
+}
+.text_content {
+  width: 50%;
+  word-wrap: break-word;
+  padding: 10px 10px;
+}
+.text_content h2 {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.text_content a.h_content {
+  font-size: 20px;
+  font-family: "Bahnschrift", sans-serif;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: black;
+}
+.text_content a.h_content:hover {
+  color: #cb8bec;
+  transition: 0.5s;
+}
+.text_content p {
+  text-align: justify;
+  font-size: 15px;
+  font-family: "Bahnschrift", sans-serif;
+  padding-bottom: 10px;
+}
+.img_content {
+  width: 50%;
+  background-position: center top;
+}
+.img_content img {
+  min-width: 317px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+.article_content div:first-child {
+  order: 2;
+}
+.article_content div:last-child {
+  order: 1;
+}
+.btn_content {
+  margin-left: 35%;
+  box-sizing: border-box;
+  background: #cb8bec;
+  border: 1px solid rgb(71, 71, 69);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  transition: 1s;
+  animation: button-home 2s infinite;
+}
+.text_content a.btn_content:hover {
+  background: #aaa9dd;
+  transition: 0.5s;
+  animation: button-home 2s infinite;
+}
+.text_content a.btn_content {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  background: rgb(185, 185, 185);
+  font-family: "Bahnschrift", sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+/*width: 151px;
+		margin-left: 26%;
+		margin-top: 10px;
+		box-sizing: border-box;
+		background: #CB8BEC;
+		padding: 10px;
+		text-align: center;*/

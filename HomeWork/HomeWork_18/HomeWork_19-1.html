@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body, html{
+            height: 100%;
+        }
+        .conteiner {
+            width: 1170px;
+            margin: 0 auto;
+        }
+        .for-video1{
+            position: relative;
+            height: 800px;
+            width: 100%; 
+        }
+        .for-video2{
+            position: relative;
+            height: auto;
+            width: 600px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <video class="for-video1" controls="controls" poster="img/asahiro.jpg">
+            <source src="img/video/intro-video-lg.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            <source src="img/video/intro-video-lg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="img/video/intro-video-lg.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+    </div>
+    <div class="conteiner">
+        <video class="for-video2" controls="controls" poster="img/asahiro.jpg">
+            <source src="img/video/intro-video-lg.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            <source src="img/video/intro-video-lg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="img/video/intro-video-lg.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+    </div>
+</body>
+</html>
