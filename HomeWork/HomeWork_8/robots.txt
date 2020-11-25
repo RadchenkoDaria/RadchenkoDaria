@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /is/
+Allow: /css/
+Disallow: /vendor/  
+Disallow: /includes/ 

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ClassWork10</title>
+</head>
+<style>
+	html {
+		background-image: url("img/css.jpg");		
+		background-size: cover;
+	}
+	body {	
+		
+		background: url("img/cw2.gif"), url("img/cw3.gif");
+		background-position: left, right;
+		background-size: 10%, 10%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;	
+		height: 2000px;
+	}		
+	.conteiner{
+		width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+		color: #25940F;
+		display: block;
+	}	
+	.menu{
+		list-style-type: none;
+		display: flex;			
+	}
+	.menu a{
+	    text-decoration: none;
+	    color: #2CD81F;
+	    margin-right: 20px;
+	}
+	.hover_link:hover{
+		font-size: 20px;
+		color: #FF0004;
+	}	
+	a:focus{		
+		border: solid 2px #D5108B;		
+	}
+	.text p{
+		text-align: left;
+		width: 200px;
+	}	
+</style>
+<body>
+	
+	<div class="conteiner">
+		<ul class="menu">
+			<li><a href="#" class="hover_link">Главная</a></li>
+			<li><a href="#" class="focus_link">О нас</a></li>
+			<li><a href="#" class="link-item">Контакты</a></li>			
+		</ul>	
+		<h1>Эйфория</h1>		
+		<div class="text">
+			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 4;					
+	}
+#fonBlock{
+	background-color: #C9B2E9;
+	}
+h1{
+	color: #CF68A5;
+	font-size: 25px;
+	}
+.box{
+	background-color: #65C37E;
+	margin-bottom: 20px;
+	}
+.first-box{
+	background-color: #C85B5D;
+	}
+h2{
+	color: #243EB7;
+	font-size: 20px;
+	}
+.first-box  h2{
+	color: #E018C6;
+	}
+p{
+	font-size: 14px;
+	
+}
+/* CSS Document */
+
