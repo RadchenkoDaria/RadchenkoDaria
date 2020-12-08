@@ -1,0 +1,61 @@
+Эльза 400 баллов за проект и адаптацию; 
+Мкет с урока 150 б ;
+
+/*HomeWork*/
+<script>
+let name, admin, age;
+name = 'Alex';
+admin = name;
+console.log('admin, age');
+
+
+
+
+
+let name ='Alex';
+let admin =;
+
+</script>
+<body>
+</body>
+/*HomeWork*/
+
+
+<script>
+let message; //обьявляем(создаем) переменную
+message ='Hello'; //название переменной
+console.log('message'); //вывели переменную
+
+let a='Hello A'; //упрощаем, называем и присваиваем
+console.log('a');
+
+let user='Daria', age=25, message2='Hello, Daria'; //добавляем и присваиваем 3 переменные
+console.log('user, age, message');
+
+let user2='Alex';
+let age2='40';
+let message3='Hello, Alex';
+
+let hello;
+hello = 'Hello'; //старое название
+hello = 'World'; //новое название - переприсвоили 
+
+let hello1 = 'Hello World';
+let mess;
+mess = 'Hello1'
+console.log(hello1);
+console.log(mess);
+
+</script>
+
+<body>
+
+</body>
+
+
+
+/*
+var //старая функция;
+let //используем;
+const //константа, нельзя переопределить(если  уверены , что функция не будет перезаписываться;
+*/
