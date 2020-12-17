@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table" border="5" cellpadding="7" >
+        <tbody>
+           <tr>
+            <td class="color">hello1</td>
+            <td class="color">hello2</td>
+            <td class="color">hello3</td>
+           </tr>
+           <tr>
+            <td class="color">hello4</td>
+            <td class="color">hello5</td>
+            <td class="color">hello6</td>
+           </tr> 
+        </tbody>        
+    </table>
+    <script>
+        let table = document.querySelector('.table');
+        table.style.background = "yellow";
+        let color = document.querySelector('.color');
+        color.innerHTML = "<i>hello1</i>";
+    </script>
+</body>
+</html>
