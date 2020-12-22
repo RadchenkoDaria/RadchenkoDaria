@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+<button id="button" onclick="myFunction('test')">Попробуй</button>
+<div id="test">Hello, World</div>
+<script>
+  document.getElementById("test").style.display = "none";
+    function myFunction(id){
+        display = document.getElementById(id).style.display;
+        if(display == "none") {
+            document.getElementById(id).style.display = "block";
+            document.getElementById('button').innerHTML = "Close";
+        }else{
+            document.getElementById(id).style.display = "none";
+            document.getElementById('button').innerHTML = "Open";
+        }
+    };
+</script>
+</body>
+</html>
