@@ -321,11 +321,17 @@ section.block3 {
   background-position: center center;
   width: 100%;
 }
+.box3_block {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
 .box3_block .icon_box3 i {
-  padding-top: 90px;
-  padding-left: 104px;
   color: #ffff33;
   font-size: 50px;
+  text-align: center;
+  display: block;
+  padding-top: 90px;
 }
 .box3_block .title_box3 {
   color: white;
@@ -336,7 +342,7 @@ section.block3 {
 .box3_block .text_box3 {
   text-align: center;
   padding-top: 55px;
-  padding-bottom: 26px;
+  padding-bottom: 35px;
 }
 .box3_block .text_box3 a {
   color: #ffff33;
@@ -372,31 +378,25 @@ section.block3 {
 .block5 .box5_block1 {
   background: #ff6666;
   margin-bottom: 30px;
-  height: 300px;
 }
 .block5 .box5_block2 {
   background: #339966;
   margin-bottom: 30px;
-  height: 300px;
 }
 .block5 .box5_block3 {
   background: #6633cc;
   margin-bottom: 30px;
-  height: 300px;
 }
 .block5 .box5_block4 {
   background: #3399ff;
-  height: 300px;
   margin-bottom: 30px;
 }
 .block5 .box5_block5 {
   background: #ffff33;
-  height: 300px;
   margin-bottom: 30px;
 }
 .block5 .box5_block6 {
   background: #00cccc;
-  height: 300px;
   margin-bottom: 30px;
 }
 .block5 .title_box5 {
@@ -416,7 +416,9 @@ section.block3 {
   margin: 0px 25px;
 }
 .block5 a.btn_box5 {
-  padding-left: 122px;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
   color: #ffff33;
   font-size: 20px;
   font-family: "vidaloka_regular";
@@ -472,10 +474,16 @@ section.block3 {
   padding-bottom: 40px;
   font-family: "vidaloka_regular";
 }
+#block7 .box7_block7 {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
 #block7 .box7_block7 .info_box7 {
   border: solid 1px #cccccc;
 }
 .box7_block7 .img_box7 img {
+  display: block;
   max-width: 350px;
   max-height: 365px;
 }
@@ -487,16 +495,18 @@ section.block3 {
   padding-top: 15px;
 }
 #block7 .box7_block7 .info_box7 .network_box7 {
-  margin-left: 24px;
-  padding-bottom: 30px;
-  font-size: 20px;
-  display: flex;
-  width: 300px;
-  border-top: solid 2px #cccccc;
-  padding-left: 85px;
+  font-size: 30px;
+  color: #b1afaf;
+  text-align: center;
+  padding-bottom: 40px;
 }
-#block7 .box7_block7 .info_box7 .network_box7 .img1_box7 {
-  padding-top: 20px;
+#block7 .box7_block7 .info_box7 .network_box7 i {
+  transition: 0.3s;
+  margin-right: 10px;
+  width: 40px;
+}
+#block7 .box7_block7 .info_box7 .network_box7 i:hover {
+  color: #ffff33;
 }
 /*Block-7*/
 
@@ -504,6 +514,8 @@ section.block3 {
 #block_8 {
   background: url(../img/block-8.jpg);
   margin-top: 140px;
+  width: 100%;
+  text-align: center;
 }
 #block_8 .title_box8 {
   color: white;
@@ -512,18 +524,18 @@ section.block3 {
   padding-top: 150px;
   font-family: "vidaloka_regular";
 }
-#block_8 .text_box7 {
+#block_8 .text_box8 {
   color: #999999;
   font-size: 16px;
   text-align: center;
   padding-top: 45px;
   font-family: "vidaloka_regular";
 }
-#block_8 .send_box7 {
+#block_8 .send_box8 {
   padding-top: 70px;
-  padding-left: 240px;
+  margin: 0 auto;
 }
-#block_8 .send_box7 input {
+#block_8 .send_box8 input {
   height: 50px;
   width: 460px;
   background: #807f7f;
@@ -531,7 +543,7 @@ section.block3 {
   border: none;
   color: white;
 }
-#block_8 .send_box7 .button_box7 {
+#block_8 .send_box8 .button_box8 {
   height: 50px;
   width: 140px;
   color: black;
@@ -540,7 +552,7 @@ section.block3 {
   border: none;
   margin-bottom: 30px;
 }
-#block_8 #form7 {
+#block_8 #form8 {
   display: block;
 }
 /*Block-8*/
@@ -548,10 +560,12 @@ section.block3 {
 /*FOOTER*/
 #footer {
   background: url(../img/footer.jpg);
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
-#footer img {
-  display: block;
-  margin: auto;
+#footer .img_footer {
+  text-align: center;
   padding-top: 50px;
 }
 #footer .text_footer {
@@ -560,14 +574,29 @@ section.block3 {
   text-align: center;
   margin-top: 40px;
   font-family: "vidaloka_regular";
+  padding-bottom: 30px;
 }
 #footer .text_footer a {
   color: #ffff33;
+  transition: 0.3s;
 }
-#footer .network_footer .img1_footer {
-  display: flex;
-  padding-left: 495px;
+#footer .text_footer a:hover {
+  text-decoration: none;
+  color: blue;
+}
+#footer .network_footer {
+  font-size: 30px;
+  color: #807f7f;
+  text-align: center;
   padding-bottom: 40px;
+}
+#footer .network_footer i {
+  transition: 0.3s;
+  margin-right: 10px;
+  width: 40px;
+}
+#footer .network_footer i:hover {
+  color: #ffff33;
 }
 /*FOOTER*/
 

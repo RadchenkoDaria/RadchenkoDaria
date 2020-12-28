@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+      padding: 0px;
+      margin: 0;
+  }  
+  .container{
+      position: relative;  
+      height: 1500px;  
+      
+  }
+  .mainacad-slider{
+      margin: 0 auto;
+      text-align: center;      
+      position: relative;
+      list-style-type: none;
+      height: 800px;      
+      overflow: hidden;
+  }
+  .mainacad-slider img.slider-img{
+      min-width: 100%;
+      transition: 0.3s;
+      z-index: 2;
+      display: block;
+      width: auto;
+      height: auto;
+  }
+  #click-prev, 
+  #click-next{
+      position: absolute;
+      opacity: 0.6;
+      z-index: 4;
+  }
+  #click-prev{
+      background: url("img/prev.png") no-repeat;
+      display: block;
+      top: 400px;
+      left: 50px;
+  }
+  #click-next{
+      background: url("img/next.png") no-repeat;
+      display: block;
+      top: 400px;
+      right: 50px;
+  }
+  #click-prev:hover{
+      opacity: 1.0;
+  }
+  #click-next:hover{
+      opacity: 1.0;
+  }
+  .click-dots{
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      background-color: grey;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  span.sim-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #BBB;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="mainacad-slider">
+            <img class="slider-img" id="slider-img" src="">
+            <button id="click-prev"><img src="img/prev.png"></button>
+            <button id="click-next"><img src="img/next.png"></button>
+            <div class="click-dots"></div>
+        </div>
+    </div>
+</body>
+<script>
+    let PrevBtn = document.getElementById('click-prev');
+    let NextBtn = document.getElementById('click-next');
+    let slideImg = document.getElementById('slider-img');
+
+    PrevBtn.addEventListener('click', onPrevBtnClick);
+    NextBtn.addEventListener('click', onNextBtnClick);
+
+    let imgUrl = [];
+    imgUrl.push('https://content.onliner.by/news/970x485/9f7f882217be09cd0f9abe99b195e6c2.jpeg');
+    imgUrl.push('https://miro.medium.com/max/4800/1*dzJqVmNhPG6ioFPP1u-HYw.jpeg');
+    imgUrl.push('https://s0.rbk.ru/v6_top_pics/media/img/3/82/755954153342823.jpg');
+    imgUrl.push('https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2020/01/xCNQV1CK8JE.jpg');
+    imgUrl.push('https://img.gazeta.ru/files3/791/13067791/MV5BZDU3Yjg0MTQtOWU2Zi00YmE1LTlkOGQtYThiZmY5MTYzY2JhXkEyXkFqcGdeQXVyMTEzMDAyMTc0-pic4_zoom-1500x1500-47820.jpg');
+
+    let currentIndexImg = 0;
+    slideImg.src = imgUrl[0];
+    PrevBtn.disabled = true;
+
+    function onPrevBtnClick(){
+        currentIndexImg --;
+        slideImg.src = imgUrl[currentIndexImg];
+        NextBtn.disabled = false;
+
+        if(currentIndexImg === 0){
+            PrevBtn.disabled = true;
+        }
+    }
+
+    function onNextBtnClick(){
+        currentIndexImg ++;
+        slideImg.src = imgUrl[currentIndexImg];
+        PrevBtn.disabled = false;
+
+        if(currentIndexImg === (imgUrl.length -1)){
+            NextBtn.disabled = true;
+        }
+    }
+
+   /* if(that.options.dots){
+        let sum = '', diffNum;
+        for(let i=0; i<that.elemCount; i++){
+            sum += '<span class="sim-dot"></span>'
+        };
+        that.indicatorDots.innerHTML = sum;
+        that.indicatorDotsAll = 
+            that.sldrRoot.querySelectorAll('span.sim-dot');
+    }*/
+</script>
+</html>

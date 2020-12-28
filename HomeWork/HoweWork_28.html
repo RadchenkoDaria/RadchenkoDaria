@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    label{
+        display: none;
+    }
+</style>
+<body>
+    <div>
+        <input value="Daria" id="name">
+        <label id="label1" for="name">Daria</label>
+    </div> 
+    <div>
+        <input value="Radchenko" id="surname">
+        <label id="label2" for="surname">Radchenko</label>
+    </div> 
+    <div>
+        <input value="Kyiv" id="city">
+        <label id="label3" for="city">Kyiv</label>
+    </div> 
+    <div>
+        <button id="click-btn">Click Send</button>
+    </div>
+    <script>
+        function showL(){
+            document.getElementById('label1').style.display = 'inline-block';
+            document.getElementById('label2').style.display = 'inline-block';
+            document.getElementById('label3').style.display = 'inline-block';
+        }
+        let sendBTN = document.getElementById('click-btn');
+        sendBTN.addEventListener('click', showL);
+    </script>
+</body>
+</html>
