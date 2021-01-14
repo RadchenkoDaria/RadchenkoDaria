@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 1170px;
+            margin: 0 auto;
+            background: burlywood;
+            text-align: center;
+            color:rgb(77, 77, 77);
+        }
+        .form_menu{
+            
+            text-align: left;
+            font-size: 24px;
+        }
+        input{
+            width: 350px;
+            height: 50px;
+            background: lemonchiffon;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 20px;
+            padding: 5px;
+            transition: 0.3s;
+        }
+        input:hover {
+            border: none;
+            background: rgb(247, 238, 158);
+        }
+        .btn_box2 {
+            width: 360px;
+            height: 50px;
+            background: lemonchiffon;
+            color:rgb(77, 77, 77);
+            text-align: center;
+            border: none;
+            margin-top: 25px;
+            border-radius: 5px;
+            font-weight: bold;  
+            font-size: 24px;
+            margin: 20px 20px;
+            transition: 0.3s;
+        }        
+        .btn_box2:hover{
+            background: rgb(247, 238, 158);
+        }
+        #console_error {
+            color: crimson;
+            font-size: 25px;
+        }
+        #console_error h2{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box_1">
+           <h2>Ваша информация:</h2>
+           <form class="form_menu">
+             <input type="text" id="name1" placeholder="Ваше имя"><br>
+             <input type="text" id="name2" placeholder="Ваша фамилия"><br>
+             <input type="email" id="email" placeholder="E-MAIL"/><br>
+             <button class="btn_box2" type="button" onclick="myFunction()">Отправить!</button>
+           </form>  
+        </div>
+        <div id="console_error">
+        </div> 
+    </div>       
+</body>
+    <script>
+       
+           function myFunction() {
+            let userName = document.getElementById('name1').value;
+            let userSurname = document.getElementById('name2').value;
+            try {
+                if ((userName == 0) && (userSurname == 0)) {
+                   throw "Пожалуйста, введите Ваше имя и фамилию"; 
+                }
+                if (userName < 1) {
+                   throw "Пожалуйста, введите Ваше имя";
+                }             
+                if (userSurname < 1) {
+                   throw "Пожалуйста, введите Вашу фамилию";  
+                }
+                 document.getElementById('console_error').innerHTML = "<h2> Вы: </h2>" + userName + ' ' + userSurname;
+            }  catch(err) {
+                document.getElementById('console_error').innerHTML = "<h2> Ошибка: </h2>" + err;
+            }         
+           }
+    </script>
+</html>
