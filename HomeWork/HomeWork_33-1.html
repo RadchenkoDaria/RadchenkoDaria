@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html, body{
+        margin: 0 auto;
+    }
+    .container{
+        width: 1070px;
+        margin: 30px auto;
+        background: #ffc0cbad;
+    }
+    div.box_info{
+        margin: 0 auto;
+    }
+    table.table_info{
+        margin: 0 auto;
+    }
+    h2{
+        text-align: center;
+        padding: 10px 10px;
+        color: #00000078;
+    }
+    label{
+        color: #00000078;
+    }
+    div.box_info table.table_info td{
+        text-align: right;
+        padding: 4px 10px;
+    }
+    div.box_info table.table_info tr{
+        transition: 0.3s;
+    }
+    div.box_info table.table_info tr:hover{
+        background: #e4ff9b8a;
+    }
+    div.box_info table.table_info td.td_left{
+        text-align: left;
+        padding: 4px 10px;
+    }
+    div.box_info input,
+    div.box_info textarea{
+        width:200px;
+        height: 15px;
+        padding:5px;
+    }
+    .button{
+        width:200px;
+        padding: 5px;
+        background: #e4ff9b8a;
+        font-size: 20px;
+        border: none;
+        transition: 0.3s;
+        margin: 10px 20px;
+    }
+    .button a{
+        color: #00000078;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .button:hover{
+        border: none;
+        background: #00ffdb5e;
+    }
+    div.btn{
+        text-align: center;
+    } 
+</style>
+<body>
+    <div class="container">
+        <div class="box_info">
+            <table class="table_info">
+                <form name="feedback" class="feedback">
+                   <tr><h2>Enter your details:</h2></tr> 
+                   <tr><td class="td_left"><label>Your name:</td><td><input name="name" type="text" id="name"></label></td></tr>
+                   <tr><td class="td_left"><label>Your lastname:</td><td><input name="lastname" type="text"></label></td></tr>
+                   <tr><td class="td_left"><label>Your e-mail:</td><td></label><input name="email" type="email" id="email"></td></tr>
+                   <tr><td class="td_left"><label>Your phone namber:</td><td></label><input name="phone" type="phone"></td></tr>
+                   <tr><td class="td_left"><label>Your city:</td><td></label><input name="city" type="text"></td></tr>
+                   <tr><td class="td_left"><label>Your comment:</td><td></label><textarea name="text" type="text"></textarea></td></tr>
+                </form>       
+            </table>
+        </div>
+        <div class="btn">
+            <button class="button" type="button" onClick="myFunction()"><a href="#">GO</a></button>
+        </div>
+    </div>    
+</body>
+<script>
+    function myFunction() {
+        let userName = document.getElementById('name').value;
+        let userEmail = document.getElementById('email').value;
+        try {
+            if ((userName == 0) && (userEmail == 0)) {
+                throw "Enter your details";
+            } if (userName == 0) {
+                throw "Please, entar your name!";
+            } if (userEmail == 0) {
+                throw "Please, entar your e-mail!";
+            } else 
+            var Elem="Your name: " + document.feedback.name.value +
+            "\nYour lastname: " + document.feedback.lastname.value +
+            "\nYour e-mail: " + document.feedback.email.value +
+            "\nYour phone namber: " + document.feedback.phone.value +
+            "\nYour city: " + document.feedback.city.value +
+            "\nYour comment: " + document.feedback.text.value;
+            alert(Elem);
+        } catch(err) {
+            alert('Error: ' + err);
+        }
+    }
+</script>
+</html>
