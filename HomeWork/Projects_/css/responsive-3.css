@@ -13,6 +13,9 @@
   #block_1 .box1 {
     text-align: center;
   }
+  .box3-1 {
+    margin: 10px auto;
+  }
 }
 @media (max-width: 991px) {
   #footer .title_foot,
@@ -113,7 +116,14 @@
     bottom: 98px;
     left: 84px;
   }
-
+  #slider-baner3 {
+    display: inline-flex;
+  }
+  .box3-1 {
+    background-image: url(../img/project-3/block-3_3.png);
+    background-position: center;
+    width: 258px;
+  }
   #block_4 .container .art-box_4 .text_content {
     width: 73%;
   }
@@ -180,5 +190,35 @@
   }
   #block_5 div.text_box5-1 {
     right: 70px;
+  }
+}
+@media (max-width: 480px) {
+  #block_1 .box1 img.gallery_img2 {
+    min-width: 396px;
+    margin-left: -36px;
+    margin-top: -177px;
+  }
+  #block_1 .box1 img.gallery_img1 {
+    max-width: 350px;
+  }
+  #block_2 .container .img_box2 {
+    display: none;
+  }
+  #block_2 .container .send_box2 .form_2 input,
+  #block_5 div.send_box5 .form_5 input {
+    width: 335px;
+  }
+  #block_2 .container .send_box2 .form_2 button,
+  #block_5 div.send_box5 .form_5 button {
+    width: 335px;
+  }
+  #block_4 .container .art-box_4 .img-box_4 {
+    width: 40%;
+  }
+  #block_4 .container .art-box_4 .text_content {
+    width: 60%;
+  }
+  #block_5 div.img_box5 {
+    display: none;
   }
 }

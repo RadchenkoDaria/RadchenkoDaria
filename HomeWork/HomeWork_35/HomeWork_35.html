@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="../jquery.fancybox-1.3.4/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../HomeWork_35/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../HomeWork_35/jquery.fancybox-1.3.4//fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../HomeWork_35/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <style>
+        *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 20px auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(12, 3vw);
+  grid-gap: 1rem; 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+  grid-column-start: 13;
+  grid-column-end: 16;
+  grid-row-start: 4;
+  grid-row-end: 10;
+}
+
+.gallery__item--2 {
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.gallery__item--3 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+.gallery__item--4 {
+  grid-column-start: 13;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 13;
+}
+
+.gallery__item--6 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 10;
+  grid-row-end: 13;
+}
+.gallery__item--7 {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 10;
+  grid-row-end: 13;
+}
+.gallery__item--8 {
+  grid-column-start: 13;
+  grid-column-end: 16;
+  grid-row-start: 10;
+  grid-row-end: 13;
+}
+.gallery__item--9 {
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.gallery__item--10 {
+  grid-column-start: 4;
+  grid-column-end: 13;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <a class="gall" rel="example_group" title="Изображение 1" href="img/image-3.jpg"><img src="img/image-3.jpg" alt="Gallery image 1"></a>
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <a class="gall" rel="example_group" title="Изображение 2" href="img/image-1.jpg"><img src="img/image-1.jpg" alt="Gallery image 2"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--3">
+                <a class="gall" rel="example_group" title="Изображение 3" href="img/image-5.jpg"><img src="img/image-5.jpg" alt="Gallery image 3"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--4">
+                <a class="gall" rel="example_group" title="Изображение 4" href="img/image-4.png"><img src="img/image-4.png" alt="Gallery image 4"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--5">
+                <a class="gall" rel="example_group" title="Изображение 5" href="img/image-7.jpg"><img src="img/image-7.jpg" alt="Gallery image 5"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--6">
+                <a class="gall" rel="example_group" title="Изображение 6" href="img/image-6.jpg"><img src="img/image-6.jpg" alt="Gallery image 6"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--7">
+                <a class="gall" rel="example_group" title="Изображение 7" href="img/image-10.jpg"><img src="img/image-10.jpg" alt="Gallery image 7"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--8">
+                <a class="gall" rel="example_group" title="Изображение 8" href="img/image-2.jpg"><img src="img/image-2.jpg" alt="Gallery image 8"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--9">
+                <a class="gall" rel="example_group" title="Изображение 9" href="img/image-9.jpg"><img src="img/image-9.jpg" alt="Gallery image 9"></a>
+           </figure>
+           <figure class="gallery__item gallery__item--10">
+                <a class="gall" rel="example_group" title="Изображение 10" href="img/image-8.jpg"><img src="img/image-8.jpg" alt="Gallery image 10"></a>
+           </figure> 
+        </div>
+    </div>
+    
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("a[rel=example_group]").fancybox({
+            'transitionIn'		: 'none',
+            'transitionOut'		: 'none',
+            'titlePosition' 	: 'over',
+            'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+                return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+            }
+        });
+    });
+</script>
+</html>
