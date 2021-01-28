@@ -1,0 +1,120 @@
+@media (max-width: 1199px) {
+  .nav-menu ul li a {
+    margin-left: 5px;
+  }
+  button.btn_box {
+    left: 370px;
+  }
+  #block_1 {
+    padding-top: 700px;
+  }
+}
+@media (max-width: 991px) {
+  button.btn_box {
+    left: 258px;
+  }
+  button.btn_box1_footer {
+    left: 60px;
+  }
+  .send_block3_box1 input {
+    width: 300px;
+  }
+  textarea.text_block3 {
+    width: 633px;
+  }
+}
+@media (max-width: 776px) {
+}
+@media (max-width: 575px) {
+  .nav-menu .navbar-toggler,
+  .nav-menu .navbar-brand {
+    display: block;
+  }
+  .nav-menu .responsive_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu .navbar-expand-md .navbar-toggler {
+    outline: none;
+  }
+  .nav-menu .navbar-expand-md .navbar-toggler i {
+    transition: 0.3s;
+  }
+  .nav-menu .navbar-expand-md .navbar-toggler i:hover {
+    color: #ff3333;
+  }
+  .nav-menu .navbar-expand-md .navbar-brand {
+    color: #ff3333;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .nav-menu {
+    margin: 15px 0px;
+    border-bottom: inherit;
+    background: rgb(255 255 255 / 70%);
+    padding: 8px;
+  }
+  #header ul.navbar-nav li.item {
+    margin: 10px 0px;
+  }
+  .nav-menu ul li a {
+    font-weight: 700;
+  }
+  .nav-menu ul li.active a,
+  .nav-menu ul li a:hover {
+    border-bottom: inherit;
+  }
+  .nav-menu ul li {
+    margin-right: 12px;
+  }
+  .nav-menu ul li a {
+    color: #ff3333;
+  }
+  button.btn_box {
+    left: 170px;
+  }
+  textarea.text_block3 {
+    width: 500px;
+  }
+  .send_block3_box1 input {
+    width: 500px;
+  }
+  button.b1 {
+    left: 30px;
+  }
+  button.b2 {
+    left: 220px;
+  }
+  button.b3 {
+    left: 405px;
+  }
+  #footer .content_foot_left {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  #footer .content_foot_right {
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  button.btn_box {
+    left: 130px;
+  }
+  .send_block3_box1 input {
+    width: 400px;
+  }
+  textarea.text_block3 {
+    width: 400px;
+  }
+  button.b1 {
+    left: 0px;
+  }
+  button.b2 {
+    left: 180px;
+  }
+  button.b3 {
+    left: 360px;
+  }
+}

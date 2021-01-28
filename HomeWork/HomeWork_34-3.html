@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Grids Gallery</title>
+	<style> 
+  *{
+  padding: 0;
+  margin: 0;
+  }
+
+  .container{
+  width: 1070px;
+  margin: 30px auto;
+ background: #ffc0cbad;
+  }
+
+  html, body{
+  margin: 0 auto;
+}
+
+button{
+width:200px;
+padding: 5px;
+background: #e4ff9b8a;
+font-size: 20px;
+border: none;
+transition: 0.3s;
+margin: 10px 20px;
+}
+
+button a{
+color: #00000078;
+font-weight: bold;
+text-decoration: none;
+}
+
+button:hover{
+border: none;
+background: #00ffdb5e;
+}
+
+.result,
+.result2{
+text-align: center;
+padding: 20px 20px;
+}
+.btn{
+text-align: center;
+}
+</style>
+</head>
+<body> 
+<div class="container">
+  <div class="result">
+    Lorem Ipsum
+  </div>
+  <div class="result2">
+    Lorem Ipsum2
+  </div>
+  <div class="btn">
+    <button onClick="changeColor('blue')" href="#">GO</button>
+    <button onClick="changeColor('red')" href="#">BACK</button>
+  </div> 
+</div> 
+</body>
+<script>
+  function changeColor(newColor) {
+    let color_red = document.getElementsByClassName("result");
+    let color_blue = document.getElementsByClassName("result2");
+    color_red[0].style.color = newColor;
+    color_blue[0].style.color = newColor;
+    }
+    
+ /* input.oninput = function(){
+    result.innerHTML = input.value;
+    }
+
+  function showCount(){
+    result1.innerHTML = name1.value.length;
+    }
+  name1.onkeyup = name1.oninput = showCount;
+  name1.onropertychange = function(){
+    if (event.propertyName == "value")showCount();
+    }
+  name1.oncut = function(){
+    setTimeout(showCount, 0);
+    }
+*/
+</script>
+</html>
