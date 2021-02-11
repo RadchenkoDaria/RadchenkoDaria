@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.0.0.js"></script> 
+    <script src="js/jquery.cookie.js"></script>
+    <style>
+        #container{
+            position: fixed;
+            z-index: 99999;
+            background: rgb(0, 0, 0, 0.5);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: none;
+        }
+        #content{
+            background: #fff;
+            width: 350px;
+            margin: 25% auto;
+            padding: 5px 20px;
+            position: relative;
+        }
+        .close{
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            color: rgb(155, 155, 155);
+            background: #1b3749;
+            cursor: pointer;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;    
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <a id="setCookie" class="close" href="#" title="Close" onclick="document.getElementById('container').style.display='none'; return false;">X</a>
+            <h1>Cos’è Lorem Ipsum?</h1>
+            <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. 
+                Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, 
+                quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per 
+                preparare un testo campione.
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#setCookie").click(function(){
+            $.cookie("contant", "", { expores:0, path: '/'});
+            $("#container").hide();
+        });
+        if ($.cookie("contant") == null){
+            setTimeout(function(){
+                $("#container").show();
+            }, 4000)
+        }else{
+            $("#container").hide();
+        }
+    });
+</script>
+</html>

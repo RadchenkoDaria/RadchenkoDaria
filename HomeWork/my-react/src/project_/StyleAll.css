@@ -1,0 +1,18 @@
+/* .MainClases {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+}  */
+.MainClases {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* background-color: blue; */
+}
+.headerClases {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.headerClases img {
+  max-width: 40px;
+}

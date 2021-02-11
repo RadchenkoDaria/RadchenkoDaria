@@ -62,7 +62,7 @@ body {
   left: 0;
   top: 0;
   z-index: 1;
-} /*ЕСЛИ ПОДОЙДЕТ РИСУНОК, ПЕРЕТАЩИТЬ ВВЕРХ*/
+}
 #slider-baner {
   padding-top: 145px;
 }
@@ -226,6 +226,8 @@ a.btn_banner:hover {
   background: rgb(255, 51, 51, 0.6);
   border: solid 5px #f33;
   transition: 0.3s;
+  z-index: 7;
+  display: flex;
 }
 .search_block2:hover {
   width: 380px;
@@ -265,7 +267,7 @@ a.btn_block2:hover {
 }
 .search_block2:hover input.name_block2,
 .search_block2:hover button {
-  display: inline-block;
+  display: block;
 }
 .content_block2 {
   margin: 0 auto;
@@ -279,6 +281,7 @@ button.btn_box1_block3 {
   margin: 0 auto;
   display: block;
   border: none;
+  z-index: 8;
 }
 a.btn_banner_block2,
 a.btn_block3 {

@@ -64,39 +64,44 @@ border: none;
     background: #00ffdb5e;
 
 }
-table.table_info{
-align:center;
-}
 div.btn{
 /*margin: 0 auto;*/
+text-align: center;
+}
+.table_info{
 text-align: center;
 }
 </style>
 </head>
 <body> 
-  <div class="container">
-    <div class="box_info">
-      <form name="feedback" class="feedback">     
-        <h2>Enter your details:</h2>
-        <table class="table_info">
+<div class="container">
+   <div class="box_info">
+
+    <form name="feedback" class="feedback">
+      <!--Анкета-->
+      
+<h2>Your color:</h2>
+<table class="table_info">
+      <tr><td class="td_left"><label>Lavender:</td><td><input name="color" type="radio" value="lavender" onKeyPress="foncolor(this.value)"></label></td></tr>
+      <tr><td class="td_left"><label>Khaki:</td><td><input name="color" type="radio" value="khaki" onKeyPress="foncolor(this.value)"></label></td></tr>
+      <tr><td class="td_left"><label>Silver:</td><td></label><input name="color" type="radio" value="silver" onKeyPress="foncolor(this.value)"></td></tr>
           <tr><td class="td_left"><label>Your name:</td><td><input name="name" type="text" id="name1"></label></td><td><span id="result1"></span></td></tr>
-          <tr><td class="td_left"><label>Your lastname:</td><td><input name="lastname" type="text"></label></td><td><span id="name"></span></td></tr>
+          <tr><td class="td_left"><label>Your lastname:</td><td><input name="lastname" type="text" id="name2"></label></td><td><span id="result2"></span></td></tr>
           <tr><td class="td_left"><label>Your e-mail:</td><td></label><input name="email" type="email" id="email"></td><td><span id="name"></span></td></tr>
-        </table>
-      </form>
-    </div>
-  <div class="btn">
-    <button class="button" type="button" onClick="myFunction()"><a href="#">GO</a></button>
-  </div>
-</div> 
+
+</table>
+</form>
+      
+   </div>
+  </div> 
 </body>
 <script>
-  /* input.oninput = function(){
-    result.innerHTML = input.value;
-    }*/
-
-  function showCount(){
+ function foncolor(color) {
+ document.bgColor = color;
+}
+ function showCount(){
     result1.innerHTML = name1.value.length;
+    result2.innerHTML = name2.value.length;
     }
   name1.onkeyup = name1.oninput = showCount;
   name1.onropertychange = function(){
@@ -106,30 +111,13 @@ text-align: center;
     setTimeout(showCount, 0);
     }
 
+name2.onkeyup = name2.oninput = showCount;
+name2.onropertychange = function(){
+    if (event.propertyName == "value")showCount();
+    }
+  name2.oncut = function(){
+    setTimeout(showCount, 0);
+    }
 
-
-/*function myFunction()
-        {
-            let userName = document.getElementById('name').value;
-            let userEmail = document.getElementById('email').value;
-try {
-if ((userName == 0) && (userEmail == 0)) {
-throw "Enter your details";
-} if (userName == 0) {
-throw "Please, entar your name!";
-} if (userEmail == 0) {
-throw "Please, entar your e-mail!";
-} else 
-           var Elem="Your name: " + document.feedback.name.value +
-                "\nYour lastname: " + document.feedback.lastname.value +
-                "\nYour e-mail: " + document.feedback.email.value +
-                "\nYour phone namber: " + document.feedback.phone.value +
-                "\nYour city: " + document.feedback.city.value +
-                "\nYour comment: " + document.feedback.text.value;
-            alert(Elem);
-} catch(err) { 
-alert('Error: ' + err);
-}
-        } */
 </script>
 </html>

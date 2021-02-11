@@ -1,0 +1,25 @@
+.SectionTwo_img {
+  display: block;
+  max-width: 215px;
+  min-height: 350px;
+  float: right;
+}
+.SectionTwo_box {
+  margin-top: 80px;
+}
+/* .navbar-expand-md .navbar-nav {
+  font-size: 16px;
+} */
+.navbar-dark .navbar-brand {
+  font-size: 25px;
+  margin: 5px;
+}
+.navbar-expand-md .navbar-nav a.nav-link {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  margin: 0px 3px;
+}
+.navbar-expand-md .navbar-nav a.nav-link:hover {
+  border: 1px solid white;
+  border-radius: 30px;
+}
